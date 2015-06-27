@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<section class="outer-container">
+
+
+
+<div class="table-minimal">
+  <table>
+  <tbody>
+        <tr>
+          <th>ITEM</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Inventory</th>
+          </tr>
+            <td><%= @product_show.title %></td>
+            <td><%= @product_show.description %></td>
+            <td><%= "$#{@product_show.price}" %></td>
+            <td><%= "# left: #{@product_show.inventory}" %></td>
+        </tr>
+
+        <tr>
+
+
+          <td>
+            <div class="button">
+              <%= link_to 'Index', products_path %>
+            </div>
+          </td>
+        </tr>
+
+    </div>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Product', new_product_path %>
+</section>
+
