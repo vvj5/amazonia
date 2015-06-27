@@ -5,3 +5,27 @@
 @import 'products';
 @import 'users';
 @import 'products_orders';
+
+.outer-container {
+  @include outer-container;
+  padding: 20px;
+}
+
+.main-content-table {
+  // @include span-columns(8)
+  // width: 400px;
+}
+
+.title-column {
+  // @include span-columns(4)
+  width: 400px;
+}
+
+.price-column {
+  // @include span-columns(1);
+  width: 100px;
+}
+
+.show-button-column {
+  @include span-columns(1);
+}
